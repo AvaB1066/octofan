@@ -8,7 +8,7 @@ $(function() {
     function HeatbedsavetyViewModel(parameters) {
         var self = this;
 
-	self.url = "/plugin/heatbedsavety/heatbedsavety";
+	self.url = "/plugin/octofan2/octofan2";
 
 	self.bedPower = ko.observable();
 
@@ -27,7 +27,7 @@ $(function() {
 	};
 
 	self.onDataUpdaterPluginMessage = function(plugin,data) {
-            if (plugin != "heatbedsavety") {
+            if (plugin != "octofan2") {
                 return;
             }
             else {
@@ -46,6 +46,6 @@ $(function() {
         // ViewModels your plugin depends on, e.g. loginStateViewModel, settingsViewModel, ...
         dependencies: [ /* "loginStateViewModel", "settingsViewModel" */ ],
         // Elements to bind to, e.g. #settings_plugin_HetBedSavety, #tab_plugin_HetBedSavety, ...
-        elements: [ "#sidebar_plugin_heatbedsavety" ]
+        elements: [ "#sidebar_plugin_octofan2" ]
     });
 });
